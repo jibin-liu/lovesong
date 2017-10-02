@@ -27,13 +27,23 @@ def build_response(session_attributes, response):
     }
 
 
-def build_audio_response(directive_type, play_behavior, audio_item):
+def build_audio_play_response(directive_type, play_behavior, audio_item):
     return {
         'directives': [
             {
                 'type': directive_type,
                 'playBehavior': play_behavior,
                 'audioItem': audio_item
+            }
+        ]
+    }
+
+
+def build_audio_stop_response():
+    return {
+        'directives': [
+            {
+                'type': 'AudioPlayer.Stop'
             }
         ]
     }

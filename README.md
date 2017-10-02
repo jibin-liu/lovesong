@@ -6,4 +6,4 @@ Amazon skill that play personal music stream.
 - `intents.py`: intents handler
 - `songs.py`: return songs
 - `responses.py`: build responses
-- `song.txt`: list of music urls
+- `song.csv`: list of music `urls`, `trackID (token)`
